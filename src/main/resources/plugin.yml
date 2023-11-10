@@ -1,0 +1,32 @@
+name: CreeperBans
+version: '${project.version}'
+main: ru.ledev.creeperbans.CreeperBans
+load: STARTUP
+authors: [LEDev, CreeperStudio]
+description: Plugin for bans
+website: ledev.ru
+
+commands:
+  cban:
+    description: 'Ban command'
+    permission: creeperbans.ban
+    aliases:
+      - ban
+  cunban:
+    description: 'Unban command'
+    permission: creeperbans.unban
+    aliases:
+      - unban
+  cbanlist:
+    description: 'Banlist command'
+    permission: creeperbans.banlist
+    aliases:
+      - banlist
+
+permissions:
+  creeperbans.ban:
+    description: 'Perm for /cban'
+  creeperbans.unban:
+    description: 'Perm for /cunban'
+  creeperbans.banlist:
+    description: 'Perm for /cbanlist'
